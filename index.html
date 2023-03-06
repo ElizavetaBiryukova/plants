@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Plants</title>
+</head>
+
+<body class="body">
+    <svg style="display: none">
+        <symbol viewBox="0 0 32 32" id="facebook">
+            <path
+                d="M13.04 29.333L13 17.666H8V12.666H13V9.33302C13 4.84002 15.787 2.66602 19.8 2.66602C21.72 2.66602 23.373 2.79902 23.853 2.86602V7.57302H21.066C18.893 7.57302 18.466 8.61302 18.466 10.133V12.666H24.666L22.999 17.666H18.466V29.333H13.039H13.04Z" />
+        </symbol>
+
+        <symbol viewBox="0 0 28 28" id="instagram">
+            <path
+                d="M15.36 0.666992C17.76 0.666992 18.267 0.693992 19.493 0.746992C20.906 0.813992 21.88 1.03999 22.72 1.37399C23.6 1.70699 24.347 2.17399 25.08 2.90699C25.827 3.63999 26.28 4.38699 26.627 5.26699C26.96 6.10699 27.174 7.07999 27.24 8.50699C27.307 9.77399 27.32 10.267 27.32 12.934V15.067C27.32 17.734 27.307 18.227 27.24 19.494C27.217 20.659 26.994 21.764 26.604 22.788L26.626 22.721C26.279 23.601 25.826 24.348 25.093 25.081C24.346 25.828 23.6 26.281 22.72 26.628C21.88 26.961 20.907 27.175 19.493 27.241C18.226 27.308 17.72 27.321 15.053 27.321H12.933C10.266 27.321 9.77302 27.308 8.49302 27.241C7.32802 27.218 6.22302 26.995 5.19902 26.605L5.26602 26.627C4.34302 26.274 3.55602 25.753 2.90702 25.094L2.90602 25.093C2.24002 24.441 1.71402 23.649 1.37402 22.764L1.35902 22.719C0.992025 21.763 0.769025 20.657 0.746025 19.502V19.492C0.693025 18.45 0.663025 17.229 0.663025 16.002C0.663025 15.776 0.664025 15.55 0.666025 15.325V15.359V12.626C0.666025 10.226 0.693025 9.71899 0.746025 8.49299C0.813025 7.07999 1.03902 6.10599 1.35902 5.26599C1.70602 4.38599 2.15902 3.63899 2.90602 2.90599C3.55102 2.23899 4.34002 1.71599 5.22302 1.38699L5.26602 1.37299C6.22102 1.00199 7.32603 0.773992 8.48102 0.746992H8.49302C9.72003 0.693992 10.226 0.666992 12.626 0.666992H15.36ZM15.387 3.06699H12.6C10.293 3.06699 9.80002 3.09399 8.60003 3.14699C7.30702 3.19999 6.60003 3.41399 6.13303 3.59999C5.50603 3.83999 5.06602 4.13299 4.60002 4.59999C4.13402 5.06699 3.84002 5.50699 3.60002 6.13299C3.42702 6.59999 3.20002 7.30599 3.14702 8.61299C3.09402 9.81299 3.06702 10.293 3.06702 12.613V15.386C3.06702 17.706 3.09402 18.186 3.14702 19.386C3.20002 20.679 3.41402 21.386 3.60002 21.853C3.84002 22.48 4.13302 22.92 4.60002 23.386C5.06702 23.852 5.50703 24.146 6.13303 24.386C6.60003 24.573 7.30602 24.786 8.61302 24.839C9.90602 24.906 10.373 24.919 13.253 24.919H14.733C17.626 24.919 18.08 24.906 19.386 24.839C20.679 24.786 21.386 24.572 21.853 24.386C22.48 24.146 22.92 23.853 23.386 23.386C23.852 22.919 24.146 22.479 24.386 21.853C24.573 21.386 24.786 20.68 24.839 19.386C24.906 18.079 24.919 17.626 24.919 14.733V13.266C24.919 10.373 24.906 9.90599 24.839 8.59899C24.786 7.30599 24.572 6.59899 24.386 6.13199C24.16 5.53099 23.819 5.01799 23.387 4.59999L23.386 4.59899C22.966 4.16599 22.454 3.82499 21.881 3.60799L21.853 3.59899C21.121 3.32299 20.275 3.15799 19.391 3.14599H19.386C18.358 3.09399 17.155 3.06399 15.944 3.06399C15.748 3.06399 15.552 3.06499 15.356 3.06599H15.386L15.387 3.06699ZM14 7.14699C17.781 7.14699 20.847 10.212 20.847 13.994C20.847 17.776 17.782 20.841 14 20.841C10.219 20.841 7.15302 17.776 7.15302 13.994C7.15302 10.212 10.218 7.14699 14 7.14699ZM14 9.54699C11.544 9.54699 9.55303 11.538 9.55303 13.994C9.55303 16.45 11.544 18.441 14 18.441C16.456 18.441 18.447 16.45 18.447 13.994C18.447 11.538 16.456 9.54699 14 9.54699ZM21.107 5.27999C21.991 5.27999 22.707 5.99599 22.707 6.87999C22.707 7.76399 21.991 8.47999 21.107 8.47999C20.223 8.47999 19.507 7.76399 19.507 6.87999C19.507 5.99599 20.223 5.27999 21.107 5.27999Z" />
+        </symbol>
+
+        <symbol viewBox="0 0 32 32" id="twitter">
+            <path
+                d="M29.333 7.83998C28.333 8.33298 27.333 8.50698 26.16 8.66698C27.333 7.99998 28.16 6.99998 28.493 5.66698C27.488 6.27498 26.317 6.73798 25.07 6.98898L25 7.00098C23.969 5.98698 22.56 5.35498 21.004 5.33398H21C18.16 5.33398 15.667 7.84098 15.667 10.841C15.667 11.334 15.667 11.668 15.84 12.001C11.262 11.823 7.22103 9.66398 4.52903 6.36198L4.50703 6.33398C4.08203 7.05998 3.83103 7.93198 3.83103 8.86298C3.83103 8.97198 3.83403 9.08098 3.84103 9.18898L3.84003 9.17398C3.87403 11.052 4.84903 12.695 6.31303 13.655L6.33403 13.668C5.49403 13.668 4.66703 13.335 3.82703 13.001C3.82703 15.668 5.66703 17.841 8.16003 18.334C7.66703 18.507 7.16003 18.507 6.66703 18.507C6.33403 18.507 6.00003 18.507 5.66703 18.334C6.33403 20.507 8.33403 22.174 10.84 22.174C9.04003 23.629 6.72403 24.509 4.20303 24.509C4.13203 24.509 4.06103 24.508 3.99003 24.507H4.00103H2.66803C5.03303 26.016 7.90403 26.936 10.984 27H11.001C21.001 27 26.508 18.667 26.508 11.493V10.826C27.655 10.036 28.601 9.03898 29.311 7.88198L29.335 7.83998H29.333Z" />
+        </symbol>
+
+        <symbol viewBox="0 0 32 32" id="pinterest">
+            <path
+                d="M16 2.66699C8.65699 2.69399 2.71399 8.65299 2.71399 16C2.71399 21.599 6.16599 26.393 11.057 28.368L11.146 28.4C11.013 27.347 10.919 25.733 11.186 24.573L12.746 17.946C12.746 17.946 12.346 17.146 12.346 15.973C12.346 14.12 13.426 12.746 14.773 12.746C15.906 12.746 16.466 13.599 16.466 14.613C16.466 15.76 15.733 17.466 15.346 19.053C15.026 20.386 16.013 21.466 17.333 21.466C19.706 21.466 21.52 18.973 21.52 15.373C21.52 12.173 19.227 9.95999 15.947 9.95999C15.871 9.95599 15.783 9.95399 15.694 9.95399C12.505 9.95399 9.92099 12.539 9.92099 15.727C9.92099 15.729 9.92099 15.731 9.92099 15.733C9.92099 16.88 10.361 18.106 10.908 18.773C11.015 18.906 11.028 19.026 10.988 19.16L10.615 20.667C10.562 20.907 10.415 20.974 10.175 20.854C8.49499 20.067 7.45499 17.654 7.45499 15.681C7.45499 11.481 10.522 7.62799 16.282 7.62799C20.895 7.62799 24.509 10.908 24.509 15.321C24.509 19.921 21.602 23.614 17.576 23.614C16.243 23.614 14.963 22.907 14.536 22.081L13.696 25.241C13.265 26.578 12.704 27.739 12.008 28.804L12.042 28.748C13.212 29.12 14.558 29.335 15.953 29.335C23.317 29.335 29.286 23.365 29.286 16.002C29.286 8.65499 23.344 2.69599 16.004 2.66899H16.001L16 2.66699Z" />
+        </symbol>
+
+    </svg>
+    <header class="header">
+        <div class="header-wrapper">
+            <div class="logo">Plants</div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About us</a></li>
+                    <li class="nav-item"><a href="#service" class="nav-link">Service</a></li>
+                    <li class="nav-item"><a href="#price" class="nav-link">Price</a></li>
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="burger-wrapper">
+                <div class="burger">
+                    <span class="burger-item burger-item--one"></span>
+                    <span class="burger-item burger-item--two"></span>
+                    <span class="burger-item burger-item--three"></span>
+                    <span class="burger-item burger-item--four"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="welcome" id="home">
+            <div class="welcome-wrapper">
+                <h1 class="title title-welcome">We grow <span>plants</span> and give you oxygen</h1>
+                <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                <div class="button">
+                    <a href="/#">Learn more</a>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="about-wrapper">
+                <h2 class="title title-about">We are <span>professional experienced</span> gardeners</h2>
+                <p class="description description-about">Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                    a
+                    galley of type and scrambled it to make a type specimen book. It has survived not only five
+                    centuries,
+                    but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+            </div>
+        </section>
+        <section class="service" id="service">
+            <h2 class="title title-service">Service and our projects</h2>
+            <ul class="buttons-list">
+                <li class="button-item">
+                    <button class="button-filter buttons button-gardens" data-id="gardens">Gardens</button>
+                </li>
+                <li class="button-item">
+                    <button class="button-filter buttons button-lawn" data-id="lawn">Lawn</button>
+                </li>
+                <li class="button-item">
+                    <button class="button-filter buttons button-planting" data-id="planting">Planting</button>
+                </li>
+            </ul>
+            <div class="projects">
+                <article class="project project-garden">
+                    <picture>
+                        <source media="(max-width: 1439px)" srcset="./img/services/first-tablet.png">
+                        <img src=" ./img/services/first.png" alt="woman holding a flower">
+                    </picture>
+                    <div class="project-text">
+                        <h3 class="project-name">Garden care</h3>
+                        <p class="project-description">Lorem Ipsum has been the industry</p>
+                    </div>
+                </article>
+                <article class="project project-planting">
+                    <picture>
+                        <source media="(max-width: 1439px)" srcset="./img/services/second-tablet.png">
+                        <img src="./img/services/second.png" alt="lemon">
+                    </picture>
+                    <div class="project-text">
+                        <h3 class="project-name">Planting</h3>
+                        <p class="project-description">Lorem Ipsum has been the industry</p>
+                    </div>
+                </article>
+                <article class="project project-lawn">
+                    <picture>
+                        <source media="(max-width: 1439px)" srcset="./img/services/third-tablet.png">
+                        <img src="./img/services/third.png" alt="plant sprayer">
+                    </picture>
+                    <div class="project-text">
+                        <h3 class="project-name">Lawn care</h3>
+                        <p class="project-description">Lorem Ipsum has been the industry</p>
+                    </div>
+                </article>
+                <article class="project project-planting">
+                    <picture>
+                        <source media="(max-width: 1439px)" srcset="./img/services/fourth-tablet.png">
+                        <img src="./img/services/fourth.png" alt="woman harvesting a plant">
+                    </picture>
+                    <div class="project-text">
+                        <h3 class="project-name">Planting</h3>
+                        <p class="project-description">Lorem Ipsum has been the industry</p>
+                    </div>
+                </article>
+                <article class="project project-garden">
+                    <picture>
+                        <source media="(max-width: 1439px)" srcset="./img/services/fifth-tablet.png">
+                        <img src="./img/services/fifth.png" alt="plants in small pots">
+                    </picture>
+                    <div class="project-text">
+                        <h3 class="project-name">Garden care</h3>
+                        <p class="project-description">Lorem Ipsum has been the industry</p>
+                    </div>
+                </article>
+                <article class="project project-planting">
+                    <picture>
+                        <source media="(max-width: 1439px)" srcset="./img/services/sixth-tablet.png">
+                        <img src="./img/services/sixth.png" alt="planting a cactus">
+                    </picture>
+                    <div class="project-text">
+                        <h3 class="project-name">Planting</h3>
+                        <p class="project-description">Lorem Ipsum has been the industry</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="prices" id="price">
+            <div class="rates">
+                <h2 class="title price-title">Prices</h2>
+                <ul class="rates-list">
+                    <li class="rate-item">
+                        Basics
+                        <div class="rate-description">
+                            <p class="rate-text">Release of Letraset sheets<br> containing Lorem Ipsum passages,<br> and
+                                more
+                                recently</p>
+                            <div class="rate-price"><span>$15 </span>/per hour</div>
+                            <div class="rate-order"><a href="#contacts">Order</a></div>
+                        </div>
+                    </li>
+                    <li class="rate-item">
+                        Standard
+                        <div class="rate-description">
+                            <p class="rate-text">Release of Letraset sheets<br> containing Lorem Ipsum passages,<br> and
+                                more
+                                recently</p>
+                            <div class="rate-price"><span>$25 </span>/per hour</div>
+                            <div class="rate-order"><a href="#contacts">Order</a></div>
+                        </div>
+                    </li>
+                    <li class="rate-item">
+                        Pro care
+                        <div class="rate-description">
+                            <p class="rate-text">Release of Letraset sheets<br> containing Lorem Ipsum passages,<br> and
+                                more
+                                recently</p>
+                            <div class="rate-price"><span>$35 </span>/per hour</div>
+                            <div class="rate-order"><a href="#contacts">Order</a></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="contacts-price">
+                <h3 class="title price-title price-title-option">Our best <span>gardeners</span> are<br> ready to help
+                    you</h3>
+                <div class="button price-button">
+                    <a href="/#" class="contact-link">Contact us</a>
+                </div>
+            </div>
+        </section>
+        <section class="contacts" id="contacts">
+            <h2 class="title contacts-title">Contact us</h2>
+            <div class="city-wrappers">
+                <div class="names-list">
+                    <div class="city">City</div>
+                    <div class="city city-one name-none">Canandaigua, NY</div>
+                    <div class="city city-two name-none">New York City</div>
+                    <div class="city city-three name-none">Yonkers, NY</div>
+                    <div class="city city-four name-none">Sherrill, NY</div>
+                </div>
+                <div class="city-list">
+                    <div class="city-item" data-id="one">Canandaigua, NY</div>
+                    <div class="city-item" data-id="two">New York City</div>
+                    <div class="city-item" data-id="three">Yonkers, NY</div>
+                    <div class="city-item" data-id="four">Sherrill, NY</div>
+                </div>
+
+                <div class="city-cards">
+                    <div class="city-card card-one city-none">
+                        <div class="city-name"><span>City: </span>Canandaigua, NY</div>
+                        <div class="city-phone"><span>Phone: </span>+1 585 393 0001</div>
+                        <div class="city-office"><span>Office adress: </span>151 Charlotte Street</div>
+                        <a href="tel:+15853930001" class="contact-link">
+                            <div class="city-callus">
+                                Call us
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="city-card card-two city-none">
+                        <div class="city-name"><span>City: </span>New York City</div>
+                        <div class="city-phone"><span>Phone: </span>+1 212 456 0002</div>
+                        <div class="city-office"><span>Office adress: </span>9 East 91st Street</div>
+                        <a href="tel:+12124560002" class="contact-link">
+                            <div class="city-callus">Call us</div>
+                        </a>
+                    </div>
+
+                    <div class="city-card card-three city-none">
+                        <div class="city-name"><span>City: </span>Yonkers, NY</div>
+                        <div class="city-phone"><span>Phone: </span>+1 914 678 0003</div>
+                        <div class="city-office"><span>Office adress: </span>511 Warburton Ave</div>
+                        <a href="tel:+19146780003" class="contact-link">
+                            <div class="city-callus">Call us</div>
+                        </a>
+                    </div>
+
+                    <div class="city-card card-four city-none">
+                        <div class="city-name"><span>City: </span>Sherrill, NY</div>
+                        <div class="city-phone"><span>Phone: </span>+1 315 908 0004</div>
+                        <div class="city-office"><span>Office adress: </span>14 WEST Noyes BLVD</div>
+                        <a href="tel:+13159080004" class="contact-link">
+                            <div class="city-callus">Call us</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <div class="footer-info">
+                <p>©</p>
+                <p>2022</p>
+                <p><a href="https://github.com/ElizavetaBiryukova" class="github nav-link">github</a></p>
+            </div>
+            <div class="rsschool">
+                <a href="https://rs.school/js-stage0/">Rolling Scopes School</a>
+            </div>
+            <ul class="icons">
+                <li class="icon">
+                    <a href="https://www.instagram.com">
+                        <svg width="30" height="30">
+                            <use xlink:href="#instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="https://www.facebook.com">
+                        <svg width="32" height="32">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="https://twitter.com">
+                        <svg class="icons" width="32" height="32">
+                            <use xlink:href="#twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="https://ru.pinterest.com/">
+                        <svg width="32" height="32">
+                            <use xlink:href="#pinterest"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
